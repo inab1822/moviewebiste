@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/57af0483fc.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Monoton&family=Play:wght@400;700&display=swap');
+        </style>
+</head>
+<body>
+    <div class="loginPage">
+        <div class="loginBox">
+            <p>사용자 등록이 필요합니다.</p>
+            <form action="" class="loginForm">
+                <div class="ID">
+                    ID<input type="text" placeholder="등록 할 이름을 입력하세요." required>
+                </div>
+
+                <div class="PASSWORD">
+                    PASSWORD<input type="password" required>
+                </div>
+
+                <div class="ck">
+                    <input type="checkbox" name="idSave" id="ckBox">
+                    <label for="idSave">아이디 저장</label>
+                </div>
+
+                <div class="ck">
+                    <input type="checkbox" name="autoLog" id="ckBox">
+                    <label for="autoLog">자동 로그인</label>
+                </div>
+
+                <button class="regist">등록</button>
+            </form>
+        </div>
+    </div>
+    <header class="mo">
+        <h1>JJ</h1>
+        <div class="nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navBox">
+            <button class="close">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <ul>
+                <li>추천</li>
+                <li>애니메이션</li>
+                <li>영화</li>
+                <li>시리즈</li>
+                <li>로그인 관리</li>
+                <li>고객센터</li>
+                
+            </ul>
+        </div>
+        <div class="userBox">
+            <button>로그아웃</button>
+            <button>개인정보변경</button>
+        </div>
+
+        <button class="user">
+            <i class="fa-solid fa-user"></i>
+        </button>
+        <button class="srcicon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="srcBox">
+            <form action="">
+                <input type="text">
+                <button class="srcBtn">검색</button>
+            </form>
+            <div class="srcResult swiper">
+                <div class="src swiper-wrapper">
+        
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2 class="pc">JJabFlix</h2>
+        <div class="content">
+            
+            <div class="con swiper best">
+                <h3>Best 작품</h3>
+                <div class="bestTrack swiper-wrapper">
+                    <div class="box swiper-slide">
+                        <img src="images/best_m1.jpg">
+                        <div class="bTxt">
+                            <h4>블랙 아담 <span>(Black Adam)</span></h4>
+                            <p>장편 | 일반영화 | 액션, 어드벤처, SF | 124분 43초 | 12세이상관람가 | 미국</p>
+                            <p>슈퍼 히어로, 블록버스터</p>
+                            <p>개봉일 : 2022-10-19</p>
+                            <div class="actorCon Swiper">
+                                <div class="actor swiper-wrapper">
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <script>
+                                var swiper = new Swiper(".actorCon", {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                  
+                                });
+                              </script>
+                        </div>
+                        
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="images/best_m2.jpg">
+                        <div class="bTxt">
+                            <h4>인생은 아름다워</h4> <span>(Life is Beautiful)</span></h4>
+                            <p>장편 | 일반영화 | 뮤지컬 | 122분 25초 | 12세이상관람가 | 한국</p>
+                            <p>개봉일 : 2022-09-28</p>
+                            <div class="actorCon Swiper">
+                                <div class="actor swiper-wrapper">
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <script>
+                                var swiper = new Swiper(".actorCon", {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                  
+                                });
+                              </script>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="images/best_m3.jpg">
+                        <div class="bTxt">
+                            <h4>공조2 인터내셔날 <span>(Confidential Assignment2 International)</span></h4>
+                            <p>장편 | 일반영화 | 액션, 코미디 | 128분 31초 | 15세이상관람가 | 한국</p>
+                            <p>개봉일 : 2022-09-07</p>
+                            <div class="actorCon Swiper">
+                                <div class="actor swiper-wrapper">
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <script>
+                                var swiper = new Swiper(".actorCon", {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                  
+                                });
+                              </script>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="images/best_m4.jpg">
+                        <div class="bTxt">
+                            <h4>오펀: 퍼스트 킬 <span>(Orphan: First Kill,Esther)</span></h4>
+                            <p>장편 | 일반영화 | 공포(호러), 스릴러 | 98분 21초 | 15세이상관람가 | 미국</p>
+                            <p>개봉일 : 2022-10-12</p>
+                            <div class="actorCon Swiper">
+                                <div class="actor swiper-wrapper">
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <script>
+                                var swiper = new Swiper(".actorCon", {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                  
+                                });
+                              </script>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="images/best_m5.jpg">
+                        <div class="bTxt">
+                            <h4>듄 <span>(DUNE)</span></h4>
+                            <p>장편 | 일반영화 | SF | 155분 15초 | 12세이상관람가 | 미국</p>
+                            <p>SF 블록버스터</p>
+                            <p>개봉일 : 2021-10-20</p>
+                            <div class="actorCon Swiper">
+                                <div class="actor swiper-wrapper">
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <script>
+                                var swiper = new Swiper(".actorCon", {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                  
+                                });
+                              </script>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="images/best_m6.jpg">
+                        <div class="bTxt">
+                            <h4>대무가 <span>(DAEMUGA)</span></h4>
+                            <p>장편 | 독립영화 | 드라마, 코미디 | 107분 7초 | 15세이상관람가 | 한국</p>
+                            <p>개봉일 : 2022-10-12</p>
+                            <div class="actorCon Swiper">
+                                <div class="actor swiper-wrapper">
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <script>
+                                var swiper = new Swiper(".actorCon", {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                  
+                                });
+                              </script>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="images/best_m7.jpg">
+                        <div class="bTxt">
+                            <h4>티켓 투 파라다이스 <span>(Ticket to Paradise)</span></h4>
+                            <p>장편 | 일반영화 | 멜로/로맨스, 코미디 | 103분 51초 | 12세이상관람가 | 미국</p>
+                            <p>개봉일 : 2022-10-12</p>
+                            <div class="actorCon Swiper">
+                                <div class="actor swiper-wrapper">
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <script>
+                                var swiper = new Swiper(".actorCon", {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                  
+                                });
+                              </script>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="images/best_m8.jpg">
+                        <div class="bTxt">
+                            <h4>에브리씽 에브리웨어 올 앳 원스 <br><span>(Everything Everywhere All At Once)</span></h4>
+                            <p>장편 | 일반영화 | 액션, 코미디 | 139분 28초 | 15세이상관람가 | 미국</p>
+                            
+                            <p>개봉일 : 2022-10-12</p>
+                            <div class="actorCon Swiper">
+                                <div class="actor swiper-wrapper">
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <script>
+                                var swiper = new Swiper(".actorCon", {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                  
+                                });
+                              </script>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="images/best_m9.jpg">
+                        <div class="bTxt">
+                            <h4>정직한 후보2 <span>(Honest Candidate 2)</span></h4>
+                            <p>장편 | 일반영화 | 코미디 | 106분 43초 | 12세이상관람가 | 한국</p>
+                            <p>좌충우돌 코미디</p>
+                            <p>개봉일 : 2022-09-28</p>
+                            <div class="actorCon Swiper">
+                                <div class="actor swiper-wrapper">
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                    <div class="acbox swiper-slide">
+                                        <img src="images/m1_actor1.jpg">
+                                        <div class="actorName">드웨인 존슨</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <script>
+                                var swiper = new Swiper(".actorCon", {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                  
+                                });
+                              </script>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <script>
+                var swiper = new Swiper(".best", {
+                  effect: "coverflow",
+                  grabCursor: true,
+                  centeredSlides: true,
+                  slidesPerView: "auto",
+                  coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                  },
+                 
+                });
+              </script>
+            <div class="con swiper reco">
+                <h3>추천 작품</h3>
+                <div class="bestTrack swiper-wrapper">
+                    <div class="box swiper-slide">
+                        <img src="images/rec1.png">
+                    </div>
+                    <div class="box swiper-slide"><img src="images/rec2.png"></div>
+                    <div class="box swiper-slide"><img src="images/rec3.png"></div>
+                    <div class="box swiper-slide"><img src="images/rec4.png"></div>
+                    <div class="box swiper-slide"><img src="images/rec5.png"></div>
+                    <div class="box swiper-slide"><img src="images/rec6.png"></div>
+                    <div class="box swiper-slide"><img src="images/rec7.png"></div>
+                    <div class="box swiper-slide"><img src="images/rec8.png"></div>
+                    <div class="box swiper-slide"><img src="images/rec9.png"></div>
+                </div>
+                
+            </div>
+            <script>
+                var swiper = new Swiper(".reco", {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                  
+                });
+              </script>
+            
+            <div class="con swiper ani">
+                <h3>애니메이션</h3>
+                <div class="bestTrack swiper-wrapper">
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                </div>
+                
+            </div>
+            <script>
+                var swiper = new Swiper(".ani", {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                  
+                });
+              </script>
+            
+            <div class="con swiper movie">
+                <h3>영화</h3>
+                <div class="bestTrack swiper-wrapper">
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                </div>
+                
+            </div>
+            <script>
+                var swiper = new Swiper(".movie", {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                  
+                });
+              </script>
+            
+            <div class="con swiper series">
+                <h3>시리즈</h3>
+                <div class="bestTrack swiper-wrapper">
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                    <div class="box swiper-slide"></div>
+                </div>
+                
+            </div>
+            <script>
+                var swiper = new Swiper(".series", {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                  
+                });
+              </script>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
